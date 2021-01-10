@@ -9,8 +9,6 @@ auth.set_access_token(Access_token, Access_token_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 
-user = api.me()
-
 search = '#100DaysOfCode'
 
 for tweet in tweepy.Cursor(api.search, search).items():
