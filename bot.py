@@ -9,7 +9,8 @@ auth.set_access_token(Access_token, Access_token_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 
-search = '#100DaysOfCode'
+search = '#UselessEducationMinister' 'ResignAshwathNarayan'
+#(100DaysOfCode)
 
 for tweet in tweepy.Cursor(api.search, search).items():
     try:
